@@ -14,6 +14,6 @@ Name :
 
  Task Assignments :
 - Alfina Hilma Zein : User authentication and registration modules.
-- Aroliani Munte : Admin management functionalities.
+- Aroliani Munte : Insert available airlines, managing and monitoring tickets or service requests from users or customers.
 - Nayla Syahgita   : Create profile, user, and login for customers
 - Satwika Zahrani P: Enabling users or administrators to store and manage important information in database.
