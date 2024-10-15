@@ -6,7 +6,7 @@ Name :
 
    This project is an Airline Management System developed to streamline and manage airline operations, such as ticket booking, user registration, and administrative functions. It is implemented using PHP for the backend and integrates various modules to handle different aspects of the system.
    
-   Project Goals :
+ Project Goals :
 - Allowing users to register and log in.
 - Enabling administrators to manage users, flights, and ticket bookings.
 - Simplifying the ticket booking process for customers.
