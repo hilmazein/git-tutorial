@@ -13,7 +13,7 @@ Name :
 - Providing an easy-to-navigate administrative interface for system management.
 
  Task Assignments :
-- [Member 1 Name]: User authentication and registration modules.
-- [Member 2 Name]: Admin management functionalities.
+- Alfina Hilma Zein : User authentication and registration modules.
+- 2. Aroliani Munte : Admin management functionalities.
 - Nayla Syahgita   : Create profile, user, and login for customers
 - Satwika Zahrani P: Enabling users or administrators to store and manage important information in database.
