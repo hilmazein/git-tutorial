@@ -16,4 +16,4 @@ Name :
 - [Member 1 Name]: User authentication and registration modules.
 - [Member 2 Name]: Admin management functionalities.
 - [Member 3 Name]: Ticket booking system.
-- [Member 4 Name]: Project integration and testing.
+- Satwika Zahrani P   : Enabling users or administrators to store and manage important information in database.
