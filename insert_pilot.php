@@ -27,7 +27,7 @@ if (isset($_GET['pilot_id'])) {
         echo "Error deleting row: " . $conn->error;
     }
 } else {
-    echo "Pilot ID not provided for deletion.";
+    echo "Pilot ID is not provided for deletion.";
 }
 
 $conn->close();
