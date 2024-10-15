@@ -14,6 +14,6 @@ Name :
 
  Task Assignments :
 - Alfina Hilma Zein : User authentication and registration modules.
-- 2. Aroliani Munte : Admin management functionalities.
+- Aroliani Munte : Admin management functionalities.
 - Nayla Syahgita   : Create profile, user, and login for customers
 - Satwika Zahrani P: Enabling users or administrators to store and manage important information in database.
