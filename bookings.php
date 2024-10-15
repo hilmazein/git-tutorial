@@ -79,6 +79,7 @@ $result = $conn->query($sql);
         <table class="table table-bordered">
             <thead>
                 <tr>
+                    <th>Full Name</th>
                     <th>Username</th>
                     <th>Flight ID</th>
                     <th>Ticket Number</th>
@@ -92,6 +93,7 @@ $result = $conn->query($sql);
                 while ($row = $result->fetch_assoc()) {
                     ?>
                     <tr>
+                        <td><?php echo $row["fullname"]; ?></td>
                         <td><?php echo $row["username"]; ?></td>
                         <td><?php echo $row["flight_id"]; ?></td>
                         <td><?php echo $row["ticket_number"]; ?></td>
@@ -99,7 +101,7 @@ $result = $conn->query($sql);
                         <td><?php echo $row["seat_number"]; ?></td>
                         <td><?php echo $row["class"]; ?></td>
                     </tr>
-                    <?php
+                <?php
                 }
                 ?>
             </tbody>
