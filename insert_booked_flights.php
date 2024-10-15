@@ -2,6 +2,7 @@
 require_once('dbconnect.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['username']) && isset($_POST['flight_id']) && isset($_POST['ticket_number']) && isset($_POST['price']) && isset($_POST['seat_number']) && isset($_POST['class'])) {
+    $fullname = $_POST['fullname'];
     $username = $_POST['username'];
     $flight_id = $_POST['flight_id'];
     $ticket_number = $_POST['ticket_number'];
@@ -9,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['username']) && isset($
 	$seat_number = $_POST['seat_number'];
 	$class = $_POST['class'];
 
-    $sql = "INSERT INTO booked_flights (username, flight_id, ticket_number, price, seat_number, class) 
+    $sql = "INSERT INTO booked_flights (fullname, username, flight_id, ticket_number, price, seat_number, class) 
     VALUES ('$username', '$flight_id', '$ticket_number', '$price', '$seat_number', '$class')";
     $result = $conn->query($sql);
 
