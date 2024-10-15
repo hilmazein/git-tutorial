@@ -139,7 +139,6 @@
 
             if ($result->num_rows > 0) {
                 echo "<table><tr>
-                            <th>Full Name</th>
                             <th>Username</th>
                             <th>Flight Id</th>
                             <th>Ticket Number</th>
@@ -149,7 +148,7 @@
                             </tr>";
 
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td>" . $row ["fullname"] . $row["username"] . "</td><td>" . $row["flight_id"] . "</td><td>" . $row["ticket_number"] . "</td><td>" . $row["price"] . "</td><td>" . $row["seat_number"] . "</td><td>" . $row["class"] . "</td></tr>";
+                    echo "<tr><td>" . $row["username"] . "</td><td>" . $row["flight_id"] . "</td><td>" . $row["ticket_number"] . "</td><td>" . $row["price"] . "</td><td>" . $row["seat_number"] . "</td><td>" . $row["class"] . "</td></tr>";
                 }
 
                 echo "</table>";
@@ -167,9 +166,6 @@
             <div class="title">Add a New Booking</div>
 
             <form action="insert_booked_flights.php" class="form_design" method="post">
-                    <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required><br>
-                
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required><br>
 
