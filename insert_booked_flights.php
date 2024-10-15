@@ -24,7 +24,21 @@ if (isset($_GET['ticket_number'])) {
     $ticket_number = $_GET['ticket_number'];
 
     $sql = "DELETE FROM booked_flights WHERE ticket_number = '$ticketNumber'";
+	
+	$sql0 = "SELECT * FROM booked_flights WHERE ticket_number = '$ticketNumber'";
+	$resultCheckTicket = $conn->query($sql0);
+	if ($resultCheckTicket->num_rows > 0) {
+		$row = $resultCheckTicket->fetch_assoc();
+		$flightId = $row['flight_id'];
+		$price = $row['price'];
+		$seatNumber = $row['seat_number'];
+		$class = $row['class'];
 
+		$sql2 = "UPDATE flights SET capacity = capacity, booked = booked - 1 WHERE flight_id = '$flightId'";
+		$conn->query($sql2);
+
+		echo "Booking canceled successfully!";
+	}
 
 	$result = $conn->query($sql);
 
