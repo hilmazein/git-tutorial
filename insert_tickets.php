@@ -36,6 +36,14 @@ if (isset($_GET['ticket_number'])) {
 		$updatesql = "UPDATE flights SET capacity = capacity-1, booked = booked WHERE flight_id = '$flightId'";
 		$conn->query($updatesql);
 	}
+	$result = $conn->query($sql);
+
+    if ($result === TRUE) {
+        header("Location: admin_tickets.php");
+    } else {
+        echo "Error deleting row: " . $conn->error;
+    }
+} 
 
 
 $conn->close();
