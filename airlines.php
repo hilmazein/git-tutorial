@@ -177,6 +177,7 @@
                 <label for="airline_name">Enter Airline Name to Delete:</label>
                 <input type="text" id="airline_name" name="airline_name" required>
                 <button type="submit">Delete</button>
+                <button type="submit">Reset</button>
             </form>
         </div>
     </section>
