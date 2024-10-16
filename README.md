@@ -4,7 +4,9 @@ Name :
 3. Nayla Syahgita	(001202300201)
 4. Satwika Zahrani	(001202300099)
 
-   This project is an Airline Management System developed to streamline and manage airline operations, such as ticket booking, user registration, and administrative functions. It is implemented using PHP for the backend and integrates various modules to handle different aspects of the system.
+This project is actually our past project. We use this project to do GitHub Repository Collaboration. 
+
+This project is an Airline Management System developed to streamline and manage airline operations, such as ticket booking, user registration, and administrative functions. It is implemented using PHP for the backend and integrates various modules to handle different aspects of the system.
    
  Project Goals :
 - Allowing users to register and log in.
